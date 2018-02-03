@@ -2,3 +2,4 @@
 
 - name: supervisor restart
   service: name=supervisor state=restarted
+  when: supervisor_restart_if_changed
